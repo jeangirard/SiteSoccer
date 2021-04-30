@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <html>
+    <head>
+      <title>Contact</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <header>
+        <a name="top"></a>
+        <div>
+          <img id="img1" src="images/logo" alt="logo" />
+          <h2>"Tous pour gagner"</h2>
+          <img id="img2" src="images/logo" alt="logo" />
+        </div>
+      </header>
+      <nav>
+        <div class="bouton">
+          <a href="index.html">Index</a>
+        </div>
+        <div class="bouton">
+          <a href="page2.html">Joueurs</a>
+          <div class="dropdown-content">
+            <a href="page2.html">lien1</a>
+            <a href="page2.html">lien2</a>
+            <a href="page2.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="page3.html">Inscription</a>
+          <div class="dropdown-content">
+            <a href="page3.html">lien1</a>
+            <a href="page3.html">lien2</a>
+            <a href="page3.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="page4.html">Médias</a>
+          <div class="dropdown-content">
+            <a href="page4.html">lien1</a>
+            <a href="page4.html">lien2</a>
+            <a href="page4.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="bouton" id="boutonExt">
+          <a href="https://www.impactmontreal.com">Externe</a>
+        </div>
+      </nav>
+      <div class="contact">
+        <h1>Pour communiquer avec nous :</h1>
+        <form id="formContact">
+          <br />
+          <label>Votre nom :</label><br /><br />
+          <input name="Nom" /><br /><br />
+          <div id="iframe" style="width: 200px">
+            <iframe
+              width="200"
+              height="200"
+              src="https://maps.google.com/maps?width=200&amp;height=200&amp;hl=en&amp;q=Stade%20Saputo+(Soccer%20Impact)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              ><a href="https://www.maps.ie/draw-radius-circle-map/"
+                >Radius map tool</a
+              >
+            </iframe>
+          </div>
+          <label>Votre email :</label><br /><br />
+          <input name="Email" /><br /><br />
+          <label>Votre message :</label> <br /><br />
+          <textarea name="Message" rows="7" cols="60"> </textarea><br /><br />
+          <input
+            class="bouton"
+            id="valider"
+            type="submit"
+            onclick="alert('Votre formulaire complètement fictif à bien été envoyé.')"
+            value="Soumettre"
+          />
+          <input class="bouton" id="reset" type="reset" value="Réinitialiser" />
+        </form>
+      </div>
+      <footer>
+        <div class="bouton" id="footMenu">
+          <p>
+            Menu<br />
+            <a href="index.html">Index</a>
+            <a href="page2.html">Joueurs</a>
+            <a href="page3.html">Inscription</a>
+            <a href="page4.html">Médias</a>
+            <a href="contact.html">Contact</a>
+          </p>
+        </div>
+        <div class="nom">
+          <h3>Jean Girard</h3>
+          <p>jeangirard14@hotmail.com</p>
+          <p>© 2020/05</p>
+          <a href="#top"> <img src="images/Home" alt="logo"/></a>
+        </div>
+        <a href="https://www.mlssoccer.com/"
+          ><img class="imgFooter" src="images/mls" alt="logo"
+        /></a>
+      </footer>
+    </body>
+  </html>
+</html>

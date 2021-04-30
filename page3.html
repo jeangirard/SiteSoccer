@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <html>
+    <head>
+      <title>Inscription</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <header>
+        <a name="top"></a>
+        <div>
+          <img id="img1" src="images/logo" alt="logo" />
+          <h2>"Tous pour gagner"</h2>
+          <img id="img2" src="images/logo" alt="logo" />
+        </div>
+      </header>
+      <nav>
+        <div class="bouton">
+          <a href="index.html"> Index </a>
+        </div>
+        <div class="bouton">
+          <a href="page2.html"> Joueurs </a>
+          <div class="dropdown-content">
+            <a href="page2.html">lien1</a>
+            <a href="page2.html">lien2</a>
+            <a href="page2.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="page3.html"> Inscription </a>
+          <div class="dropdown-content">
+            <a href="page3.html">lien1</a>
+            <a href="page3.html">lien2</a>
+            <a href="page3.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="page4.html"> Médias </a>
+          <div class="dropdown-content">
+            <a href="page4.html">lien1</a>
+            <a href="page4.html">lien2</a>
+            <a href="page4.html">lien3</a>
+          </div>
+        </div>
+        <div class="bouton">
+          <a href="contact.html"> Contact </a>
+        </div>
+        <div class="bouton" id="boutonExt">
+          <a href="https://www.impactmontreal.com">Externe</a>
+        </div>
+      </nav>
+      <a id="form"></a>
+      <form>
+         
+          <fieldset>
+              <legend>Informations personnelles:</legend>
+        <label >Prénom:</label>
+        <input name="Prenom"/>
+        <label>Nom de famille:</label>
+        <input name="Nom"/>
+        <label>Sexe:</label>
+        <input type="radio" id="homme" name="genre" value="homme" />
+        <label for="homme">Homme</label>
+        <input type="radio" id="female" name="genre" value="femme" />
+        <label for="femme">Femme</label>
+        <input type="radio" id="autre" name="genre" value="autre" />
+        <label for="autre">Autre</label><br />
+        <label>No:</label>
+        <input id="no" name="NoRue" />
+        <label>Rue:</label>
+        <input name="Rue"/>
+        <label>Ville:</label>
+        <input name="Ville" id="ville" />
+        <label>Province:</label>
+        <select id="Province" name="Province">
+          <option value="Alberta">Alberta</option>
+          <option value="Ontario">Ontario</option>
+          <option value="Québec" selected>Québec</option>
+          <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+          <option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+          <option value="Colombie-Britannique">Colombie-Britannique</option>
+          <option value=Île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
+          <option value="Saskatchewan">Saskatchewan </option>
+          <option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador </option>
+          <option value="Territoires du Nord-Ouest ">Territoires du Nord-Ouest </option>
+          <option value="Nunavut ">Nunavut </option>
+          <option value="Yukon">Yukon </option>
+        </select> 
+        <label >Code postal:</label>
+        <input id="PC" name="CodePostal"/> <br>
+        <label> Téléphone:</label>
+        <input name="Telephone"/>
+         <label>Cellulaire:</label>
+        <input name="Cellulaire"/>
+        <label id="lblComP3">Commentaire:</label>
+        <textarea id="comP3" name="Commentaire" rows="7" cols="40">
+            </textarea> <br>
+            <ul>
+              <label>Forfait :</label>
+              <li><input type="checkbox" name="Forfait Essai"> <label>Essai</label></li>
+                <li><input type="checkbox" name="Forfait Mensuel"> <label>Mensuel</label></li>
+                  <li><input type="checkbox" name="Forfait Annuel"> <label>Annuel</label></li>                    
+                    <li><input type="checkbox" name="Forfait Camp d'été"> <label>Camp d'été</label></li>
+                      <li><input type="checkbox" name="Forfait Équipe"> <label>Équipe compétitive</label> </li> 
+            </ul>   
+            <div id="LD">
+            <label>Position :</label>
+            <select name="liste déroulante">
+              <option value="Attaquant">Attaquant</option>
+              <option value="Défenseur">Défenseur</option>
+              <option value="Gardien de but">Gardien de but</option>
+              <option value="Demi-Défensif">Demi-Défensif</option>
+              <option value="Joueur Flottant">Joueur Flottant</option>
+            </select> 
+          </div>
+          </fieldset>
+          <fieldset>
+              <legend>Informations d'authentification: </legend>
+              <label >Nom d'utilisateur :</label>
+              <input  name="UserName" required />
+              <label>Mot de passe :</label>
+              <input type="password"  name="Password" required/>
+            </fieldset>
+
+        <input class="bouton"  id="valider" value="Soumettre" type="submit" onclick="alert('Vous avez bien appuyé sur ce bouton inutile.')"/>
+        <input class="bouton" id="reset" value="Réinitialiser" type="reset" />
+      </form>
+      <footer>
+        <div class="bouton" id="footMenu">
+          <p>
+            Menu<br>
+            <a href="index.html">Index</a>
+            <a href="page2.html">Joueurs</a>
+            <a href="page3.html">Inscription</a>
+            <a href="page4.html">Médias</a>
+            <a href="contact.html">Contact</a>
+          </p>
+        </div>
+        <div class="nom">
+          <h3>Jean Girard</h3>
+          <p>jeangirard14@hotmail.com</p>
+          <p>© 2020/05</p>
+          <a href="#top"> <img src="images/Home" alt="logo"/></a>
+        </div>
+        <a href="https://www.mlssoccer.com/"
+        ><img class="imgFooter" src="images/mls" alt="logo"
+      /></a>
+      </footer>
+    </body>
+  </html>
+</html>
